@@ -1,0 +1,317 @@
+/* <!-- This website was designed and programmed by Rijan Rai  --> */
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.poppins-semibold {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	color: rgb(38, 226, 226);
+}
+
+li {
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+.hero {
+	background-color: aliceblue;
+	height: 80dvb;
+	background-image: url('../images/itaaa.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.hero-top {
+	color: cyan;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	margin-left: 50%;
+
+	/* text-align: right; */
+	/* margin-right: 10px; */
+}
+
+/* hero ko header */
+.ita-header h1 {
+	color: cyan;
+	text-shadow: 2px 2px #0d2926af;
+}
+
+/* end of hero header */
+
+.learn-more {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 100px;
+	margin-top: 40px;
+}
+
+/* slogan */
+.slogan {
+	font-family: cursive;
+	padding: 50px;
+	margin-top: 10%;
+	font-weight: 900;
+	font-size: x-large;
+}
+
+/* End of slogan */
+
+
+/* button ko lagi */
+
+.bn13 {
+	display: inline-block;
+	padding: 0.65em 1.6em;
+	border: 3px solid black;
+	margin: 0 0.3em 0.3em 0;
+	border-radius: 0.12em;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	color: black;
+	text-align: center;
+	transition: all 0.2s;
+	animation: bn13bouncy 5s infinite linear;
+	position: relative;
+}
+
+.bn13:hover {
+	background-color: rgba(76, 250, 250, 0.658);
+	color: #000000;
+}
+
+.learn-more {
+	border: none;
+}
+
+@keyframes bn13bouncy {
+	0% {
+		top: 0em;
+	}
+
+	40% {
+		top: 0em;
+	}
+
+	43% {
+		top: -0.9em;
+	}
+
+	46% {
+		top: 0em;
+	}
+
+	48% {
+		top: -0.4em;
+	}
+
+	50% {
+		top: 0em;
+	}
+
+	100% {
+		top: 0em;
+	}
+}
+
+/* end of button  */
+
+
+
+/* responsive design */
+/* Media queries for responsive design */
+
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+	.hero {
+		background-image: url("../images/ita.png");
+		background-size: cover;
+		height: 60dvb;
+
+
+
+		/* Change background image for smaller screens */
+	}
+
+	.learn-more {
+		margin-right: -20px !important;
+		margin-top: 20px !important;
+	}
+
+	.slogan {
+		padding-top: 50px;
+		margin-left: 2px !important;
+
+		font-family: cursive;
+		font-weight: 200;
+		font-size: x-small;
+	}
+
+
+
+
+
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.hero {
+		background-image: url('../images/ita.png');
+		/* Change background image for medium-sized screens */
+		background-size: cover;
+		height: 60dvb;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+/* For screens larger than 1023px */
+@media (min-width: 1024px) {
+	.hero {
+		background-image: url('../images/itaaa.png');
+		/* Change background image for larger screens */
+		background-size: cover;
+		height: 90dvb;
+
+	}
+}
+
+
+
+/* hero section */
+
+
+
+
+/* Testimonials */
+h2 {
+	color: #000;
+	font-size: 34px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 70px;
+}
+
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	border-radius: 1px;
+	/* what are we saying */
+	background: cyan;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+
+.carousel .carousel-item {
+	/* text */
+	color: #000000;
+	overflow: hidden;
+	min-height: 120px;
+	font-size: 13px;
+}
+
+.carousel .media img {
+	width: 80px;
+	height: 80px;
+	display: block;
+	border-radius: 50%;
+}
+
+.carousel .testimonial {
+	padding: 0 15px 0 60px;
+	position: relative;
+}
+
+.carousel .testimonial::before {
+	content: "\201C";
+	font-family: Arial, sans-serif;
+	/* " yesko */
+	color: black;
+	font-weight: bold;
+	font-size: 68px;
+	line-height: 54px;
+	position: absolute;
+	left: 15px;
+	top: 0;
+}
+
+.carousel .overview b {
+	text-transform: uppercase;
+	/* name */
+	color: rgb(71, 174, 243);
+}
+
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin: 1px 3px;
+	box-sizing: border-box;
+}
+
+.carousel-indicators li {
+	background: #e2e2e2;
+	border: 4px solid black;
+}
+
+.carousel-indicators li.active {
+	color: black;
+	background: white;
+	border: 4px double;
+}
+
+
+/* End of Testimonials */
+
+/*stats counter  */
+#stats-counter {
+	background-image: url('../images/html.jpg');
+	/* background-color: rgba(0, 255, 255, 0.61); */
+	background-size: cover;
+	background-attachment: fixed;
+	/* This keeps the background fixed while scrolling */
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+	font-size: x-large;
+	font-weight: 600;
+	font-family: "Roboto", sans-serif;
+	font-style: bold;
+}
+
+/* end of stats counter */
+
+
+
+/* gallery */
+
+/* end of gallery */
+
+.footer{
+	background-color: rgba(0, 255, 255, 0.219);
+}
+
+
+/* <!-- This website was designed and programmed by Rijan Rai  --> */
+
