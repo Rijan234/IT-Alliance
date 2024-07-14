@@ -48,7 +48,18 @@
     <link href="../assets/css/mainn.css" rel="stylesheet">
 
     <style>
-
+        #message-us{
+            font-size: smaller;
+        }
+        
+        .btn-message{
+            color: rgba(5, 5, 5, 0.416);
+            background-color: cyan;
+        }
+        .btn-message:hover{
+            color: black;
+            background-color: cyan;
+        }
     </style>
 
 
@@ -121,7 +132,11 @@
                     frameborder="0" allowfullscreen></iframe>
             </div><!-- End Google Maps -->
 
-          
+          <!-- message -->
+           <div class="section-header">
+            <h2>Message Us</h2> <br>
+            <p id="message-us">If you have any queries about this organization, wanting collaboration, guidance, workshops or any type of academic assistance . Drop Message ! </p>
+           </div>
 
 
             <form action="https://formspree.io/f/myyrbdyn" method="POST" class="p-3 p-md-4">
@@ -146,7 +161,7 @@
       <div class="error-message"></div>
       <div class="sent-message">Your message has been sent. Thank you!</div>
     </div> --> <br>
-                <div class="text-center"><button type="submit" class="btn btn-success">Send Message</button></div>
+                <div class="text-center"><button type="submit" class="btn btn-message">Send Message</button></div>
             </form><!--End Contact Form -->
 
 
